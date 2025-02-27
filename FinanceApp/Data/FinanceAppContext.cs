@@ -9,6 +9,6 @@ namespace FinanceApp.Data
         public FinanceAppContext(DbContextOptions<FinanceAppContext> options):base(options)  { }
 
         // Instance of the Class to interact with the DB of the Expense table
-        DbSet<Expense> Expenses { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
     }
 }
